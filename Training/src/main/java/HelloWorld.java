@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String user_command;
+        System.out.println("Witaj świecie!");
+        do {
+            System.out.println("Wpisz EXIT, a następnie wybierz ENTER aby wyjść z aplikacji.");
+            user_command = sc.nextLine();
+        } while (!user_command.equals("EXIT"));
+    }
+}
